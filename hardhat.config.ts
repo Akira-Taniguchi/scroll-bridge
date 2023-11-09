@@ -21,20 +21,13 @@ const config = {
 		},
 	},
 	networks: {
-		rinkeby: {
-			url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ARCHEMY_KEY!}`,
+		sepolia: {
+			url: 'https://eth-sepolia-public.unifra.io',
 			accounts: [privateKey],
 		},
-		polygonMumbai: {
-			url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env
-				.ARCHEMY_KEY!}`,
+		sepolia_scroll: {
+			url: 'https://sepolia-rpc.scroll.io/',
 			accounts: [privateKey],
-		},
-	},
-	etherscan: {
-		apiKey: {
-			rinkeby: process.env.ETHERSCAN_API_KEY!,
-			polygonMumbai: process.env.POLYGONSCAN_API_KEY!,
 		},
 	},
 }
